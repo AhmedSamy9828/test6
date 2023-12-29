@@ -1,0 +1,95 @@
+# [ Miscellaneous ]
+ # *.class: يتعلق بملفات الـ Java bytecode المُترجمة. لا يتم تتبعها عادةً لأنها يمكن إعادة إنشاؤها من ملفات المصدر الخاصة بك.
+*.class
+ # *.log: يشير إلى ملفات السجل (logs) التي يُنتجها التطبيق. لا يجب تتبعها في مستودع Git لأنها قد تكون مؤقتة ومنتجة بشكل متكرر.
+*.log
+ # *.pyc: يشير إلى ملفات الـ Python compiled. لا يجب تتبعها لأنها يمكن إعادة إنشاؤها من ملفات السكريبت الخاصة بك.
+*.pyc
+ # *.swp: يُشير إلى ملفات تبديل الاحتياطي المؤقتة التي يُنشئها محرر النصوص Vim.
+*.swp
+ # .DS_Store: يشير إلى ملفات المعلومات الخاصة بنظام التشغيل macOS التي تحتوي على المعلومات حول تكوين المجلدات والملفات.
+.DS_Store
+ # .atom/: يشير إلى مجلد مشروع Atom Editor.
+.atom/
+ # .buildlog/: يشير إلى مجلد يحتوي على سجلات عملية البناء.
+.buildlog/
+ # .history: يشير إلى مجلد يحتوي على تاريخ التعديلات أو التحركات في المستودع.
+.history
+ # .svn/: يشير إلى مجلدات نظام الإدارة والتحكم في الإصدار Subversion.
+.svn/
+ # migrate_working_dir/: يشير إلى مجلد مؤقت يستخدم في عمليات النقل والتحويل.
+migrate_working_dir/
+
+
+#الأكواد التالية تتعلق بأدوات التطوير والبناء المحددة:
+# IntelliJ related
+ # *.iml: يشير إلى ملفات مشروع IntelliJ IDEA.
+*.iml
+ # *.ipr: يشير إلى ملفات المشروع IntelliJ IDEA.
+*.ipr
+ # *.iws: يشير إلى ملفات إعدادات المشروع الشخصية لـ IntelliJ IDEA.
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# [ Firebase configuration files ]
+ # 1- google-services.json: ملف مفاتيح خدمات Firebase.
+google-services.json
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+ios/firebase_app_id_file.json
+macos/firebase_app_id_file.json
+lib/firebase_options.dart
+ # 2- من أجل ال macos
+GoogleService-Info.plist
+ # 3- credentials.json: ملف مفاتيح توثيق API للخدمات الخارجية.
+       #ملفات مفاتيح التوثيق (مثل مفاتيح OAuth أو JWT).
+credentials.json
+
+# Firebase secret keys
+*.p12
+*.jks
+
+# Firebase service account file
+serviceAccountKey.json
+
+#   يُعد firebase_options.dart ملفًا يحتوي على مفاتيح API وتكوينات حساسة لخدمات Firebase
+firebase_options.dart
+
+#  Flutter Bulid
+*.apk
+*.aab
+*.apks
+#/build/
+/output/
+/dist/
+
+# Google Play Store Secret key
+/upload-keystore.jks
